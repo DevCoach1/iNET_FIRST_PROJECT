@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(240, 236, 236);
+}
+
+.brand-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.p-img {
+    height: 50px;
+    width: 50px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigations ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navigations ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: large;
+}
+
+.navigations ul li:hover {
+    color: rgb(70, 70, 205);
+}
+
+.navigations ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(70, 70, 205);
+    display: block;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.navigations ul li:hover::after{
+    width: 100%;
+    color: rgb(70, 70, 205);;
+}
